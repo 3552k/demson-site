@@ -52,3 +52,6 @@
 @keyframes rep-cycle{0%,12%{transform:translateX(-100%)}18%,100%{transform:translateX(100%)}}
 @media(max-width:800px){.capture-film.capture-twin-film{display:block;aspect-ratio:16/10;width:calc(100% - 28px)}.capture-film>.capture-scene{object-position:center center}.capture-mode{top:14px;font-size:7px}.capture-mode-sense{left:14px}.capture-mode-twin{right:14px}.capture-twin-film figcaption{left:14px;right:14px;bottom:12px;font-size:6px}.capture-cycle{bottom:15px;width:24%}}
 @media(prefers-reduced-motion:reduce){.capture-cycle i::after{animation:none;transform:none}}
+
+.site-footer{min-height:120px;padding-top:30px;padding-bottom:26px}
+@media(max-width:800px){.site-footer{min-height:150px;padding-top:30px;padding-bottom:26px}}
