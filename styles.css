@@ -55,3 +55,56 @@
 
 .site-footer{min-height:120px;padding-top:30px;padding-bottom:26px}
 @media(max-width:800px){.site-footer{min-height:150px;padding-top:30px;padding-bottom:26px}}
+
+/* Five-section information architecture. */
+.focus-section{padding:clamp(90px,11vw,150px) 0;scroll-margin-top:24px}
+.focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.65fr);gap:clamp(48px,9vw,130px);align-items:end}
+.focus-section .eyebrow{color:#65716b}
+.focus-copy{max-width:520px;color:#4b5550;font-size:16px;line-height:1.7}
+.focus-copy p{margin-bottom:20px}.focus-copy p:last-child{margin-bottom:0;color:var(--ink)}
+.problem-section{background:var(--bone)}
+
+.coaching-section{background:#101617;color:#eff4ef}
+.coaching-section .eyebrow{color:var(--green)}
+.focus-heading>p{max-width:34ch;margin:0;color:#aeb9b3;font-size:15px;line-height:1.75}
+.coaching-steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(55px,7vw,90px);border-top:1px solid rgba(214,237,225,.18);border-bottom:1px solid rgba(214,237,225,.18)}
+.coaching-steps article{padding:30px 36px 35px 0}.coaching-steps article+article{padding-left:36px;border-left:1px solid rgba(214,237,225,.18)}
+.coaching-steps span{font:10px var(--mono);color:var(--lime)}
+.coaching-steps h3{margin:34px 0 12px;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.055em}
+.coaching-steps p{max-width:30ch;margin:0;color:#a7b4ad;font-size:13px;line-height:1.7}
+.app-summary{display:grid;grid-template-columns:.5fr .9fr 1fr;gap:clamp(30px,5vw,70px);align-items:start;padding-top:clamp(55px,7vw,90px)}
+.app-summary h3{margin:0;font-size:clamp(30px,3.5vw,52px);line-height:1;letter-spacing:-.065em}
+.app-summary>p:not(.eyebrow){margin:0;color:#aeb9b3;font-size:14px;line-height:1.75}
+.app-fields{grid-column:2/4;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.app-fields span,.outfit-points span{border:1px solid rgba(214,237,225,.22);border-radius:99px;padding:8px 11px;color:#bdc9c2;font:10px var(--mono)}
+
+.outfit-section{background:#f0f1ee}
+.outfit-grid{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1fr);gap:clamp(55px,10vw,150px);align-items:center}
+.outfit-material{position:relative;margin:0;box-shadow:0 24px 55px rgba(16,28,22,.14)}
+.outfit-material img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.outfit-material figcaption{position:absolute;right:18px;bottom:18px;max-width:220px;color:#e4eae6;font:10px/1.5 var(--mono);text-align:right}
+.outfit-copy h2{margin-bottom:30px}.outfit-copy>p:not(.eyebrow){max-width:49ch;color:#4b5550;font-size:15px;line-height:1.75;margin-bottom:18px}
+.outfit-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.outfit-points span{border-color:#c4ccc6;color:#58635d;background:#f8f9f6}
+
+.roadmap-section{background:#0b0e0f;color:var(--bone)}
+.roadmap-section .eyebrow{color:var(--green)}
+.roadmap-summary{display:flex;gap:14px;align-items:flex-start;color:#aeb9b3;font-size:14px;line-height:1.7}
+.roadmap-summary .status-pip{flex:0 0 auto;margin-top:8px}.roadmap-summary p{margin:0}
+.roadmap-section .pathway-list{margin-top:clamp(55px,7vw,90px);border-color:rgba(214,237,225,.18)}
+.roadmap-section .pathway-list li{border-color:rgba(214,237,225,.18)}
+.roadmap-section .pathway-list li>span{color:#76847d}.roadmap-section .pathway-list p{color:#9eaca5}.roadmap-section .pathway-list i{color:var(--green)}
+.roadmap-contact{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-top:clamp(65px,8vw,105px);padding-top:35px;border-top:1px solid rgba(214,237,225,.18)}
+.roadmap-contact .eyebrow{margin-bottom:14px}.roadmap-contact h3{margin:0;font-size:clamp(32px,4vw,58px);letter-spacing:-.065em}
+.roadmap-contact .button-light{flex:0 0 auto}
+
+@media(max-width:1000px){.site-nav .nav-links{gap:18px}.site-nav .nav-links>a:not(.nav-cta){font-size:11px}}
+@media(max-width:800px){
+  .focus-section{padding:85px 0}.focus-grid,.outfit-grid{grid-template-columns:1fr;gap:32px;align-items:start}
+  .focus-copy{font-size:15px}.coaching-steps{grid-template-columns:1fr;margin-top:52px}
+  .coaching-steps article,.coaching-steps article+article{padding:25px 0 29px;border-left:0;border-bottom:1px solid rgba(214,237,225,.18)}
+  .coaching-steps article:last-child{border-bottom:0}.coaching-steps h3{margin:23px 0 9px}
+  .app-summary{grid-template-columns:1fr;gap:18px;padding-top:55px}.app-summary .eyebrow{margin-bottom:0}.app-fields{grid-column:auto;margin-top:10px}
+  .outfit-material{grid-row:2;margin-top:15px}.outfit-copy h2{margin-bottom:25px}
+  .roadmap-section .pathway-list{margin-top:52px}.roadmap-contact{align-items:flex-start;flex-direction:column}
+}

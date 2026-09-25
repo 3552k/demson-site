@@ -16,8 +16,7 @@ Then open `http://localhost:4173`.
 
 - `index.html` — page structure and product copy
 - `styles.css` — responsive visual system
-- `script.js` — the lightweight animated motion-map canvas
-- `assets/` — custom hero, suit and sensor-textile imagery
+- `assets/` — hero and sensor-textile imagery
 
 The page has no build step or runtime dependencies. It uses Google Fonts when online, with local sans-serif fallbacks.
 
