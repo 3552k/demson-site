@@ -145,7 +145,7 @@
     chart(gutter + (rowHeight + 10) * 2, rowHeight, '#7ce0ba', (p, phase) => .7 - p * .27 + Math.sin(p * Math.PI * 4 + phase) * .08, 'rgba(124,224,186,.07)');
     const markerX = 18 + ((Math.sin(t * .62) + 1) / 2) * (width - 36);
     ctx.beginPath(); ctx.moveTo(markerX, 15); ctx.lineTo(markerX, height - 14); ctx.strokeStyle = 'rgba(242,250,246,.4)'; ctx.lineWidth = 1; ctx.stroke();
-    ctx.fillStyle = '#edf4ef'; ctx.font = '9px "DM Mono", monospace'; ctx.fillText('LIVE', Math.max(18, markerX - 12), 12);
+    ctx.fillStyle = '#edf4ef'; ctx.font = '9px "DM Mono", monospace'; ctx.fillText('DEMO', Math.max(18, markerX - 12), 12);
     if (!reduceMotion) chartFrame = requestAnimationFrame(drawChart);
   }
 
